@@ -15,14 +15,24 @@ package cat;
 		* 3. Kill the Cat! 
 		
 		*/
-
-
 public class Cat {
+	
+	
 
+	public static void main(String[] args) {
+		Cat kitty = new Cat("my precious");
+		kitty.meow();
+		System.err.println( kitty.name);
+		kitty.kill();
+	}
+	
 	private String name;
 	private int lives = 9;
+	
+	
 
-	Cat(String name) {
+	
+	public Cat(String name) {
 		this.name = name;
 	}
 
